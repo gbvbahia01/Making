@@ -19,7 +19,7 @@ public class EmployeeDao extends AbstractDAO<Employee, Long> {
    protected EntityManager getEntityManager() {
       if (this.manager == null) {
          EntityManagerFactory factory = Persistence
-               .createEntityManagerFactory(PERSISTENCE_UNIT);
+               .createEntityManagerFactory(PERSISTENCE_TEST_UNIT);
          this.manager = factory.createEntityManager();
       }
       return this.manager;

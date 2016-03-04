@@ -5,7 +5,7 @@ import java.util.List;
 
 public interface InterfaceDAO<Etity, ID extends Serializable> {
 
-   String PERSISTENCE_UNIT = "dao.test.tables.derby";
+   String PERSISTENCE_TEST_UNIT = "jdbc.hsqldb.test";
 
    void create(Etity entity) throws ConstrainViolationException;
 
